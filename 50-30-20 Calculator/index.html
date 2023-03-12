@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>50/30/20 Calculator</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="mana.js"></script>
+        <link rel="stylesheet" href="styling.css">
+    </head>
+
+    <body>
+
+
+        <main class="background">
+            <div id="card">
+                <!-- Left side of the card -->
+                <div id="left" class="de">
+                    <div class="content">
+                        <div class="card-heading">
+                            <h1 class="co">Budget Calculator</h1>
+                        </div>
+                        <div id="bind">
+                            <span class="next">Amount</span>
+                            <div class="dollar">$</div>
+                            <input type="number" id="amount" required="required">
+                        </div>
+
+                        <div id="recommendation">
+
+                            <h3>Your Recommended</h3>
+                            <ol>
+                                <li>Spend on Need: <span class="need">$0.00</span></li>
+                                <li>Spend on want: <span class="want">$0.00</span></li>
+                                <li>Saving: <span class="save">$0.00</span></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side -->
+                <div id="right" class="de">
+                    <div class="content">
+                        <div class="card-heading">
+                            <h1>Rent Calculator</h1>
+                        </div>
+                        <div id="slider">
+                            <span class="next" id="rangeText">30</span>
+                            <div id="range-bar">
+                                <input type="range" min="10" max="50" value="30" id="range">
+                                <div class="measure">
+                                    <span class="right-gap">10</span>
+                                    <span class="gap">30</span>
+                                    <span class="left-gap">50</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="rent">
+                            <h3>Rent Recommended:</h3>
+                            <h3>$<span id="RentCal">0</span>/Month</h3>
+                        </div>
+
+                        <img src="pie chart.png">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+
+
+    </body>
+
+</html>
